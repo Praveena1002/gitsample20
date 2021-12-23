@@ -24,6 +24,7 @@ public class OrderStepDef extends TestBase{
 	    @Given("User is on Home Page")
 		public void user_is_on_home_page() {
       String pageTitle = homePage.getHomePageTitle();
+      System.out.println("Got Data");
       Assert.assertEquals("Your Store", pageTitle);
 		}	
 
